@@ -5,6 +5,7 @@ import React from 'react';
 import '../../src/App.css';
 import logo from '../initiallandingpagedesign/MYtineraryLogo.png'
 console.log(logo)
+
 class Logo extends React.Component {
     
   

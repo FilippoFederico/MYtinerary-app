@@ -1,14 +1,11 @@
 {
-  "name": "mytinerary",
+  "name": "routing",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-items-carousel": "^2.3.6",
-    "react-leaf-carousel": "^1.2.2",
-    "react-scripts": "3.0.1",
-    "react-simple-image-slider": "^1.0.2"
+    "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,8 +27,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "react-alice-carousel": "^1.14.0"
   }
 }
