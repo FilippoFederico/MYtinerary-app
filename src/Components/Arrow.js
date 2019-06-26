@@ -8,6 +8,7 @@ class Arrow extends React.Component {
     render() {
       return (
         <div className="arrow_div">
+          <h3>Start browsing</h3>
         <img src={arrow} alt="Arrow" className="arrow"/>
         </div>
       );

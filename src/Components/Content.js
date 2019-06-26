@@ -30,7 +30,7 @@ class Content extends React.Component {
                 
                 
                     <SimpleImageSlider
-                    width={400}
+                    width={370}
                     height={300}
                     images={images}
                     />

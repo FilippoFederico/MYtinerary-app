@@ -3,7 +3,8 @@ import '../../src/App.css'
 import Header from './Header'
 import Logo from './Logo'
 import Arrow from './Arrow'
-import Content from './Content'
+// import Content from './Content'
+import SecondContent from './SecondContent'
 
 
 export default class HomePage extends Component {
@@ -13,7 +14,7 @@ export default class HomePage extends Component {
                 <Header />
                 <Logo />
                 <Arrow />
-                <Content />
+                <SecondContent />
             </div>
         )
     }
