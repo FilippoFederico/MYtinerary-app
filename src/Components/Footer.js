@@ -2,7 +2,7 @@ import React from 'react'
 import homeIcon from '../initiallandingpagedesign/homeIcon.png'
 
 
-class SecondContent extends React.Component {
+class Footer extends React.Component {
     render() {
         return (
             <div className="secondContent">
@@ -16,4 +16,4 @@ class SecondContent extends React.Component {
         )
     }
 }
-export default SecondContent
+export default Footer

@@ -1,11 +1,10 @@
 import React from 'react'
-import '../..'
 import Header from '../Header'
 import CityList from '../CityList'
 // import Logo from '../../Logo'
 // import Arrow from '../Arrow'
 // import Content from './Content'
-import SecondContent from '../SecondContent'
+import Footer from '../Footer';
 // import { BrowserRouter as Router, Route } from "react-router-dom";
 
 export default class CityPage extends React.Component {
@@ -14,7 +13,7 @@ export default class CityPage extends React.Component {
             <div className="homepage">
                     <Header />
                     <CityList />
-                    <SecondContent />
+                    <Footer />
                 </div>
         )
     }

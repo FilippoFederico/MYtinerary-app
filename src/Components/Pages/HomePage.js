@@ -4,7 +4,7 @@ import Header from '../Header'
 import Logo from '../Logo'
 import Arrow from '../Arrow'
 // import Content from './Content'
-import SecondContent from '../SecondContent'
+import SecondContent from '../Footer'
 
 // import ContentCityPage from './ContentCityPage';
 
