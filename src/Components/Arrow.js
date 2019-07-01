@@ -1,6 +1,9 @@
 import React from 'react';
 import '../../src/App.css';
+import {Link} from 'react-router-dom'
 import arrow from '../initiallandingpagedesign/circled-right-2.png'
+// import ContentCityPage from '../Components/Pages/CityPage/ContentCityPage'
+ 
 
 class Arrow extends React.Component {
     
@@ -9,7 +12,7 @@ class Arrow extends React.Component {
       return (
         <div className="arrow_div">
           <h3>Start browsing</h3>
-        <img src={arrow} alt="Arrow" className="arrow"/>
+        <Link to='/cities'><img src={arrow} alt="Arrow" className="arrow"/></Link>
         </div>
       );
     }
