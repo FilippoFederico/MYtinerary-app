@@ -3,7 +3,7 @@ import './App.css';
 import HomePage from './Components/Pages/HomePage';
 import CityPage from './Components/Pages/CityPage'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Itineraries from './Components/Itineraries';
+import ItineraryPage from './Components/Pages/ItineraryPage';
 
 //-------------
 
@@ -22,13 +22,11 @@ class App extends React.Component {
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/cities" component={CityPage} />
-            <Route exact path="/itineraries" component={Itineraries} />
 
 {/* X responsive router, show the correct url afeter clicking on each btn*/}
-            <Route exact path="/itineraries/:name" component={Itineraries} />
+            <Route exact path="/itineraries/:name" component={ItineraryPage} />
           </Switch>
 
-{/* path="/itineraries/:name" */}
         </div>
       </Router>
   );

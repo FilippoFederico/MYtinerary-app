@@ -1,19 +1,20 @@
 import React, { Component } from 'react'
 import '../../App.css'
 import Header from '../Header'
-import Logo from '../Logo'
-import Arrow from '../Arrow'
+import Itineraries from '../Itineraries';
 import Footer from '../Footer';
+
+// import ContentCityPage from './ContentCityPage';
 
 
 export default class HomePage extends Component {
     render() {
+        const cityName = this.props.match.params.name
         return (
             
                 <div className="homepage">
                     <Header />
-                    <Logo />
-                    <Arrow />
+                    <Itineraries cityName={cityName} />
                     <Footer />
                 </div>
         )

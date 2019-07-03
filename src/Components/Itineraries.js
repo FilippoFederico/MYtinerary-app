@@ -11,10 +11,12 @@ state = {
 }
 
 async componentDidMount() {
-// X router
+
+// X dynamic router
 console.log(this.props)
 // ${this.props.match.params.name}
-const url = `https://ubiqum-mern-api.herokuapp.com/api/itineraries/${this.props.match.params.name}`;
+
+const url = `https://ubiqum-mern-api.herokuapp.com/api/itineraries/${this.props.cityName}`;
 const response = await fetch(url);
 const data = await response.json();
 console.log(data)

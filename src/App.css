@@ -90,3 +90,8 @@
   width: 98%;
   margin: auto
 }
+
+.nav_class{
+  align-content: space-between;
+  justify-content: space-between
+}
