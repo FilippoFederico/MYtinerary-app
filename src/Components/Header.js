@@ -2,7 +2,7 @@ import React from 'react';
 import '../../src/App.css';
 import loginIcon from '../initiallandingpagedesign/png_icon_1063147.png'
 import homeIcon from '../initiallandingpagedesign/homeIcon.png'
-import { Navbar } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
 import {Link} from 'react-router-dom';
 
@@ -12,23 +12,34 @@ class Header extends React.Component {
   
     render() {
       return (
-<Navbar bg="light">
-    <Navbar.Brand href="#" className="nav_class">
+      <Card.Header className="header_component">
+          <div className="header">
+            <div className="login_div">
+              <img
+              src={loginIcon}
+                width="30"
+                height="30"
+                alt="Icon"
+              />
+            </div>
+
+      <div className="logo_div"><h4>MYtinerary App</h4 ></div>
+
+      <div className="home_div">
+      <Link to='/'>
       <img
-      src={loginIcon}
-        width="30"
-        height="30"
-        alt="Icon"
-      />
-      <Navbar.Brand href="#">MYtinerary App</Navbar.Brand>
-      <Link to='/'><img
       src={homeIcon}
         width="32"
         height="32"
         alt="Icon"
-      /></Link>
-    </Navbar.Brand>
-  </Navbar>
+      />
+      
+      </Link>
+      </div>
+      
+      </div>
+  
+  </Card.Header>
 
       );
     }

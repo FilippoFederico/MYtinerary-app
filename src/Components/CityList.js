@@ -54,11 +54,11 @@ handleKeyUp = (event) => {
         else {
             return (
             <div>
-            <InputGroup onKeyUp={this.handleKeyUp}>
+            <InputGroup onKeyUp={this.handleKeyUp} className="input_component">
                 <InputGroup.Prepend>
-                <InputGroup.Text >Find city</InputGroup.Text>
+                <InputGroup.Text className="text_input">Find city</InputGroup.Text>
                 </InputGroup.Prepend>
-                <FormControl as="textarea" aria-label="With textarea" />
+                <FormControl className="input_filter" as="textarea" aria-label="With textarea" />
             </InputGroup>
 
                 {cityList.map(city => {

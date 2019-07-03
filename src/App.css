@@ -1,27 +1,35 @@
-.container{
-  width: 99%;
-  height: 100%;
-  border: 1px solid red
-}
-.App {
-  width: 100%
-}
-.icon{
-  width: 12%;
-  height: 100%;
-  margin: 10px 15px 10px 15px
-  
-  
-}
-.header_icons{
+
+
+.header{
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center
+  
+}
+.header_component{
+  margin-top: 4%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center
+}
+.login_div, .home_div{
+  width: 15%;
   /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
+.logo_div{
+  width: 60%;
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logoComponent{
   width: 90%;
@@ -52,6 +60,10 @@
 }
 .homepage{
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
 
 }
 .div_component{
@@ -66,32 +78,45 @@
   margin: auto
 }
 
-.slider{
-  width: 50%;
-  margin-bottom: 5px;
+#footer_component{
+  padding: 0;
+  border: 1px solid gainsboro;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 3%;
+}
+.all_footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between
+}
+.text_footer{
+  width: 63%
+}
+.icon_footer{
+  width: 32%;
   display: flex;
   justify-content: center;
-  
+  align-items: center
 }
-.containerSlider{
-  text-align: center;
+.login_footer{
+  margin-bottom: 3%
 }
-.secondContent{
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-.linksContent{
-  width: 100%;
-  display: flex;
-  justify-content: space-around
-}
-.citiesBox{
-  width: 98%;
-  margin: auto
+h4{
+  margin: 0px
 }
 
-.nav_class{
-  align-content: space-between;
-  justify-content: space-between
+.input_filter{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.input_component{
+  margin-bottom: 4%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.text_input{
+  font-size: 20px;
 }
