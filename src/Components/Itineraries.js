@@ -1,8 +1,7 @@
 import React from 'react'
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
-// import { Button } from 'react-bootstrap';
+import { Card, Spinner, DropdownButton, ListGroupItem } from 'react-bootstrap';
 
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 export default class Itineraries extends React.Component {
 
 state = {
@@ -31,7 +30,10 @@ clickBtn(event){
     render() {
 
         if (this.state.loading) {
-            return <div>loading...</div>;
+            return  <div className="spinner">
+                        <Spinner animation="border" role="status">
+                        </Spinner>
+                    </div>
         }
         else {
             return (
@@ -39,23 +41,43 @@ clickBtn(event){
                 
                 {this.state.itineraries.map(itinerary => {
                     return (
-                        <Card style={{ width: '100%', marginBottom:'20px' }} key={ itinerary._id }>
-                            <Card.Img variant="top" src={ itinerary.img } />
-                            <Card.Body>
-                                <Card.Title>{ itinerary.title }</Card.Title>
-                                <Card.Text>{ itinerary.city }</Card.Text>
-                                <Card.Text>{ itinerary.summary }</Card.Text>
+                            
+                                
+
+                                
+
+
+
+
+                                <Card style={{ width: '100%', marginBottom:'20px' }} key={ itinerary._id }>
+                            <Card.Img variant="top" src={ itinerary.img} style={{ width: '100%', height: '90%' }}/>
+                            <Card.Body style={{ display: 'flex', flexDirection: 'column' }}>
+                                <Card.Title style={{ display: 'flex', justifyContent: 'center' }}>{ itinerary.title }</Card.Title>
+                                <Link to='/cities'><Card.Title style={{ display: 'flex', justifyContent: 'center' }}> <span>{ itinerary.city }</span></Card.Title></Link>
+
+                                <DropdownButton
+                                    display="flex"
+                                    justifyContent="center"
+                                    title="More details"
+                                    id="dropdown-menu"
+                                    className="btn_itineraries"
+                                    >
+                                    <ListGroupItem><span>Summary</span>: { itinerary.summary }</ListGroupItem>
+                                    <ListGroupItem><span>Duration</span>: { itinerary.duration }</ListGroupItem>
+                                <ListGroupItem><span>Rating</span> { itinerary.rating }</ListGroupItem>
+                                <ListGroupItem><span>Price</span> { itinerary.price }</ListGroupItem>
+                                {/* <Link to='/cities'><ListGroupItem>GO BACK TO THE CITY PAGE</ListGroupItem></Link> */}
+                                <Link to='/cities'><ListGroupItem cursor="pointer">GO BACK TO THE CITY PAGE</ListGroupItem></Link>
+                                    
+                                </DropdownButton>
+
+
                             </Card.Body>
-                            <ListGroup className="list-group-flush">
-                                <ListGroupItem>Duration: { itinerary.duration }</ListGroupItem>
-                                <ListGroupItem>Rating: { itinerary.rating }</ListGroupItem>
-                                <ListGroupItem>Price: { itinerary.price }</ListGroupItem>
-                            </ListGroup>
-                            {/* <Card.Body>
-                                <Card.Link href="#">Card Link</Card.Link>
-                                <Card.Link href="#">Another Link</Card.Link>
-                            </Card.Body> */}
                         </Card>
+
+
+
+    
                     )
                 }
                 )}

@@ -11,8 +11,8 @@ class Arrow extends React.Component {
     render() {
       return (
         <div className="arrow_div">
-          <h3>Start browsing</h3>
-        <Link to='/cities'><img src={arrow} alt="Arrow" className="arrow"/></Link>
+          <h3>Discover our destinations</h3>
+        <Link to='/cities'><img src={arrow} alt="Arrow" className="arrow" marginBottom="5%"/></Link>
         </div>
       );
     }

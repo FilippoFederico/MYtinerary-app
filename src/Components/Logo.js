@@ -16,7 +16,9 @@ class Logo extends React.Component {
         <div className="logoComponent">
           <img src={logo} alt="Logo" className="logo"/>        
           
-  <Card.Title>Find your perfect trip, designed by insiders who know and love their cities</Card.Title>
+  <Card.Title
+  marginTop="4%"
+  marginBottom="4%">Find your perfect trip, designed by insiders who know and love their cities</Card.Title>
 
 
         </div>

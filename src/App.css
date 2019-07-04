@@ -127,3 +127,28 @@ h4{
   margin-bottom: 50px;
   margin-top: 50px;
 }
+span{
+  background-color: deepskyblue
+}
+.btn_itineraries{
+  width: 100%;
+  display: flex;
+  justify-content: center
+}
+.div_register{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+
+}
+.welcome_register{
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 5%
+}
+.register_create_account, .register_login{
+  font-size: 20px;
+  margin-bottom: 3%
+}
