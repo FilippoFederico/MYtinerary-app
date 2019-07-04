@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Button, InputGroup, FormControl } from 'react-bootstrap';
+import { Card, Button, InputGroup, FormControl, Spinner } from 'react-bootstrap';
 
 import {Link} from 'react-router-dom'
 
@@ -49,7 +49,11 @@ handleKeyUp = (event) => {
         console.log(cityList)
         
       if (this.state.loading) {
-            return <div>loading...</div>;
+
+            return  <div className="spinner">
+                    <Spinner animation="border" role="status">
+                    </Spinner>
+                    </div>
         }
         else {
             return (
