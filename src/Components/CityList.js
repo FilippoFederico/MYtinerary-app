@@ -10,7 +10,7 @@ state = {
     loading: true,
     filter: '',
 }
-
+//fetch
 async componentDidMount() {
 
 const url = "https://ubiqum-mern-api.herokuapp.com/api/cities";
@@ -22,6 +22,7 @@ let CityName = data[0]._id;
 console.log(CityName)
 
 }
+//func not functional to the project
 clickBtn(event){
     console.log(event.target.id)
 }
@@ -51,8 +52,8 @@ handleKeyUp = (event) => {
       if (this.state.loading) {
 
             return  <div className="spinner">
-                    <Spinner animation="border" role="status">
-                    </Spinner>
+                        <Spinner animation="border" role="status">
+                        </Spinner>
                     </div>
         }
         else {
@@ -60,9 +61,9 @@ handleKeyUp = (event) => {
             <div>
             <InputGroup onKeyUp={this.handleKeyUp} className="input_component">
                 <InputGroup.Prepend>
-                <InputGroup.Text className="text_input">Find city</InputGroup.Text>
+                    <InputGroup.Text className="text_input">Find city</InputGroup.Text>
                 </InputGroup.Prepend>
-                <FormControl className="input_filter" as="textarea" aria-label="With textarea" />
+                <FormControl className="input_filter" />
             </InputGroup>
 
                 {cityList.map(city => {
@@ -81,6 +82,5 @@ handleKeyUp = (event) => {
             </div>
             )
         }
-
     }
 }

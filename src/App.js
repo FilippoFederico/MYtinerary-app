@@ -5,13 +5,13 @@ import CityPage from './Components/Pages/CityPage'
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ItineraryPage from './Components/Pages/ItineraryPage';
 import RegisterPage from './Components/Pages/RegisterPage';
+
 //-------------
 
 class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      // name: 'React'
     };
   }
 
@@ -19,6 +19,7 @@ class App extends React.Component {
   return (
       <Router>
         <div className="App">
+
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route exact path="/cities" component={CityPage} />

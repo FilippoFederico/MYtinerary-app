@@ -10,9 +10,11 @@ export default class RegisterPage extends Component {
         return (
             
                 <div className="homepage">
+        {/* components */}
                     <Header />
                     <RegisterContent />
                     <Logo />
+
                 </div>
         )
     }

@@ -1,5 +1,3 @@
-
-
 .header{
   width: 100%;
   display: flex;
@@ -24,13 +22,6 @@
   align-items: center;
 }
 
-.logo_div{
-  width: 60%;
-  /* border: 1px solid red; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .logoComponent{
   width: 90%;
   height: 100%;
@@ -39,6 +30,10 @@
   margin-top: 20px;
   text-align: center;
   font-size: 100;
+}
+.logo{
+  width: 100%;
+  height: 100%
 }
 .arrow_div{
   width: 90%;
@@ -53,31 +48,14 @@
 .arrow{
   width: 20%;
 }
-.logo{
-  width: 100%;
-  height: 100%
-  
-}
+
 .homepage{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  
-
+  align-content: flex-end
 }
-.div_component{
-  border: 1px solid green;
-  width: 100px;
-  height: 100px;
-}
-.span_component{
-  border: 1px solid pink;
-  width: 50px;
-  height: 50px;
-  margin: auto
-}
-
 #footer_component{
   padding: 0;
   border: 1px solid gainsboro;
@@ -132,23 +110,45 @@ span{
 }
 .btn_itineraries{
   width: 100%;
-  display: flex;
-  justify-content: center
+  
 }
 .div_register{
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
-
 }
 .welcome_register{
   margin: auto;
-  margin-top: 10%;
-  margin-bottom: 5%
 }
 .register_create_account, .register_login{
   font-size: 20px;
-  margin-bottom: 3%
+  margin-bottom: 2%
+}
+.policy_register{
+  margin: auto;
+  margin-top: 6%;
+  height: 100%;
+  border: 1px solid red
+}
+.p_checkbox{
+  font-size: 10px;
+}
+#box_info{
+  padding: 5px;
+  background-color: lightgray;
+  transform: none
+}
+#dropdown-menu.show{
+  display: flex;
+}
+.btn-primary{
+  width: 100%;
+  border-radius: 3px
+}
+.card_body{
+  padding-bottom: 10px
+}
+#checkbox_id{
+  margin-right: 10px 
 }

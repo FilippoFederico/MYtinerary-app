@@ -10,13 +10,15 @@ import {Link} from 'react-router-dom';
 
 class Header extends React.Component {
     
+  //to change property of the same component base on different location
   colorLogin = () => {
 
     console.log(this.props.history.location.pathname)
     if(this.props.history.location.pathname === '/register-page'){
       console.log('function colorLogin')
       return {
-        display: 'none' 
+        // change color .png 
+        filter: 'opacity(50%)'
       }
       
     }
@@ -26,36 +28,37 @@ class Header extends React.Component {
       return (
 
         <withRouter>
-      <Card.Header className="header_component">
-          <div className="header">
-            <div className="login_div">
+            <Card.Header className="header_component">
+                <div className="header">
+                  <div className="login_div">
 
-            <Link to='/register-page'><img
-              src={loginIcon}
-                width="30"
-                height="30"
-                alt="Icon"
-                style={this.colorLogin()}
-              /></Link>
-            </div>
+                    <Link to='/register-page'><img
+                    src={loginIcon}
+                      width="30"
+                      height="30"
+                      alt="Icon"
+                      style={this.colorLogin()}
+                    /></Link>
+                    
+                  </div>
 
-      <div className="logo_div"><h4>MYtinerary App</h4 ></div>
+                <div className="logo_div"><h4>MYtinerary App</h4 ></div>
+                <div className="home_div">
 
-      <div className="home_div">
-      <Link to='/'>
-      <img
-      src={homeIcon}
-        width="32"
-        height="32"
-        alt="Icon"
-      />
-      </Link>
-      </div>
-      
-      </div>
-  
-  </Card.Header>
-  </withRouter>
+                  <Link to='/'>
+                  <img
+                  src={homeIcon}
+                    width="32"
+                    height="32"
+                    alt="Icon"
+                  /></Link>
+
+                </div>
+            
+              </div>
+        
+            </Card.Header>
+        </withRouter>
       );
     }
   }

@@ -7,9 +7,11 @@ export default class CityPage extends React.Component {
     render() {
         return (
             <div className="homepage">
+        {/* components */}
                     <Header />
                     <CityList />
                     <Footer />
+
                 </div>
         )
     }

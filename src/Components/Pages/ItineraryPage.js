@@ -4,18 +4,17 @@ import Header from '../Header'
 import Itineraries from '../Itineraries';
 import Footer from '../Footer';
 
-// import ContentCityPage from './ContentCityPage';
-
-
-export default class HomePage extends Component {
+export default class ItineraryPage extends Component {
     render() {
         const cityName = this.props.match.params.name
         return (
             
                 <div className="homepage">
+            {/* components for ItineraryPage */}
                     <Header />
                     <Itineraries cityName={cityName} />
                     <Footer />
+
                 </div>
         )
     }
